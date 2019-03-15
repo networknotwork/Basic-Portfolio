@@ -1,5 +1,10 @@
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
 body {
-    background-color: #ffffff;
+    background-color: #ccc;
     border-color: #dddddd;
 }
 
@@ -7,43 +12,71 @@ header {
     background-color: #ffffff;
     border-bottom: solid 5px #ccc;
     font-family: 'Georgia', Times, "Times New Roman", serif;
-    width: 960px;
-    height: 120px;
+    width: auto;
+    height: 100px;
     margin-bottom: 15px;
+}
+
+.hair {
+    position: relative;
+    width: 960px;
     margin-left: auto;
     margin-right: auto;
+}
+
+.every {
+    min-height: 100%;
 }
 
 p {
     color: #777777;
     list-style-position: inside;
     font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+    line-height: 120%;
 }
 
 footer {
     position: relative;
     background-color: #666666;
-    margin-top: 15px;
+    margin-top: -50px;
     text-align: center;
-    width: 960px;
+    width: 100%;
+    height: 50px;
     color: #fff;
     padding-top: 40px;
     padding-bottom: 5px;
+    border-top: 10px solid #4aaaa5;
+    z-index: 2;
+    float: left;
 }
 
 .page {
+    background-color: #fff;
     position: relative;
     z-index: 1;
-    width: 960px;
-    bottom: 15px;
-    margin: auto;
+    width: 940px;
+    top: 10px;
+    margin-top: auto;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 100px;
+    border: solid 2px #ddd;
+    padding-top: 10px;
+    padding-right: 10px;
+    padding-left: 10px;
+    padding-bottom: 30px;
 }
 
 #selfie {
+    float: left;
     width: 200px;
     height: 225px;
     position: relative;
+    margin: 15px;
+    border: solid #bbb 1px;
 }
+
+
 
 .btab {
     position: absolute;
@@ -52,21 +85,119 @@ footer {
     text-align: center;
     color: #fff;
     z-index: 2;
-    border-radius: 5px;
-    height: 120px;
+    border-bottom: dashed #ccc 8px;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    height: 92px;
 }
 
 .links {
-    position: absolute;
+    position: relative;
     z-index: 2;
     text-align: center;
     margin: auto;
     width: 300px;
     height: 60px;
-    left: 850px;
+    left: 360px;
     top: 50px;
+    color: #999;
 }
 
-a {
+a:link, a:visited {
     color: #888;
+    text-decoration: none;
+}
+
+hr {
+    width: 930px;
+}
+
+#itab {
+    color: #4aaaa5;
+    position: relative;
+    left: 10px;
+}
+
+#abouttext {
+    position: relative;
+    padding: 10px;
+}
+
+form {
+    padding: 12px;
+    color: #777;
+    line-height: 100%;
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+    
+}
+
+input[type=text], input[type=email] {
+    width: 100%;
+    font-size: 12pt;
+    padding: 5px;
+}
+textarea {
+    width: 100%;
+    height: 300px;
+    font-size: 12pt;
+    padding: 5px;
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+}
+
+input[type=submit] {
+    position: relative;
+    background-color: #4aaaa5;
+    color: #fff;
+    font-size: 16pt;
+    margin-top: 20px;
+    padding: 12px 20px;
+    border: none;
+    margin-bottom: 50px;
+}
+.columns:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.twin {
+    float: left;
+    width: 40%;
+    padding: 10px;
+}
+
+.portal {
+    position: relative;
+    width: 300px;
+    height: 200px;
+    margin-top: 10px;
+    margin-left: 5px;
+    margin-right: 10px;
+    margin-bottom: 20px;
+    border: 5px solid #4aaaa5;
+    text-align: center;
+    z-index: 1;
+}
+
+img.window {
+    position: absolute;
+    width: 300px;
+    height: 200px;
+    z-index: -1;
+    left: 0px;
+}
+
+
+a.prtbttn {
+    position: relative;
+    background-color: #4aaaa5;
+    color: #fff;
+    border: none;
+    top: 130px;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+    font-size: 24px;
+    z-index: 1;
 }
